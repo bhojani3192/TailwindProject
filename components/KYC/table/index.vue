@@ -1,0 +1,4 @@
+<template>
+    <KYCTableDesktop />
+    <KYCTableMobile />
+</template>

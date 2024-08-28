@@ -1,0 +1,29 @@
+table {
+    @apply text-sm text-left;
+
+
+    thead {
+        @apply bg-black-solid-50 font-bold;
+    }
+
+    tr {
+        @apply border-b border-black-transparent-200 h-16;
+
+        td,
+        th {
+            @apply p-2;
+
+            &:first-of-type {
+                @apply pl-8;
+            }
+
+            &:last-of-type {
+                @apply pr-8;
+            }
+        }
+
+        &:last-of-type {
+            @apply border-none;
+        }
+    }
+}

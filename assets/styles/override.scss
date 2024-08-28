@@ -1,0 +1,20 @@
+.container {
+    @apply mx-auto;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    /* width: 0.2em; */
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00ac99;
+    display: none;
+}

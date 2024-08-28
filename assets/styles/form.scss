@@ -1,0 +1,109 @@
+.form-heading {
+    @apply font-bold sm:text-xl mt-8 mb-6 md:my-10;
+}
+
+.form-group {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-10 mb-6 max-w-[864px];
+
+    label {
+        @apply sm:text-base font-semibold max-w-[372px] text-sm;
+
+        span {
+            @apply text-sm block font-normal;
+        }
+    }
+
+    label.full {
+        @apply max-w-[600px]
+    }
+
+    .control-group {
+        @apply flex justify-start items-center text-base font-medium;
+
+        label {
+            @apply text-sm sm:text-base font-medium;
+        }
+    }
+
+    .form-control {
+        @apply h-[48px] md:h-[56px] border border-black-transparent-200 bg-black-transparent-50 rounded-lg outline-none px-6 py-4 font-medium text-base;
+
+        &:hover {
+            @apply border-black-transparent-300 bg-black-transparent-100;
+        }
+
+        &:active {
+            @apply border-brand-solid-500 bg-brand-transparent-50;
+        }
+    }
+
+    textarea.form-control {
+        @apply min-h-[140px] resize-none;
+    }
+
+    input[type=checkbox].form-control {
+        @apply mr-4 relative w-[20px] h-[20px];
+
+        &:after {
+            @apply bg-white -top-[2px] -left-[2px] absolute w-[24px] h-[24px] content-[''] border-black-transparent-400 border-2 rounded-lg cursor-pointer;
+        }
+
+        &:checked:after {
+            @apply bg-brand-solid-500 border-brand-solid-500 bg-[url('~/assets/icons/checkmark_icon.svg')] bg-no-repeat bg-center;
+        }
+    }
+
+    input[type=radio].form-control {
+        @apply mr-4 relative w-[20px] h-[20px];
+
+        &:after {
+            @apply bg-white -top-[2px] -left-[2px] absolute w-6 h-6 content-[''] border-black-transparent-400 border-2 rounded-full cursor-pointer;
+        }
+
+        &:checked:after {
+            @apply border-brand-solid-500 border-2 bg-[url('~/assets/icons/mark_icon.svg')] bg-no-repeat bg-center w-6 h-6;
+        }
+    }
+
+    .file-wrapper {
+        @apply w-full h-[112px] relative;
+        @apply border border-black-transparent-200 bg-black-transparent-50 rounded-lg overflow-hidden cursor-pointer;
+
+        .wrap {
+            @apply absolute w-full h-full top-0 left-0 z-10;
+            @apply flex flex-col justify-center items-center;
+
+            h1 {
+                @apply font-semibold text-base;
+
+                b {
+                    @apply font-semibold text-brand-solid-500;
+                }
+            }
+
+            span {
+                @apply font-medium text-sm text-black-transparent-400;
+            }
+        }
+
+        &:hover .wrap {
+            @apply border-black-transparent-300 bg-black-transparent-100;
+        }
+
+        &:active .wrap {
+            @apply border-brand-solid-500 bg-brand-transparent-50;
+        }
+
+        input[type=file].form-control {
+            @apply w-full h-full opacity-0 z-20 relative cursor-pointer;
+        }
+    }
+
+    input[type=number] {
+
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+            @apply appearance-none m-0;
+        }
+    }
+}

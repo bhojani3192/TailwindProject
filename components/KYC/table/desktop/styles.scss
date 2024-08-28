@@ -1,0 +1,26 @@
+table {
+
+    tr {
+        @apply h-14 bg-white-500;
+    }
+
+    thead {
+        th {
+            @apply text-start text-black-transparent-400 text-sm border-b border-b-black-transparent-200;
+        }
+    }
+
+    tbody td {
+        @apply text-base font-semibold;
+    }
+
+    td {
+        .btn.link {
+            @apply text-brand-solid-500 p-0 underline max-w-[112px] w-full;
+        }
+
+        .btn.solid {
+            @apply max-h-[32px] max-w-[112px] w-full;
+        }
+    }
+}

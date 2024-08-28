@@ -1,0 +1,82 @@
+.box-content-title {
+    @apply text-black-solid-500 font-bold text-[16px];
+}
+
+.box-content-titlelarge {
+    @apply text-black-solid-500 font-bold text-[20px];
+}
+
+.box-description {
+    @apply text-sm;
+}
+
+.footer-wrapper {
+    @apply bg-white-500 border-t border-t-[#DFE0E0] border-solid pt-10 pb-9 relative;
+
+    .container{
+        @apply  md:px-0
+    }
+
+    .company-wrap {
+        @apply md:w-[30%] lg:w-[49%] sm:w-full w-[166px]  order-1 md:order-[0] md:mt-[27px] 
+    }
+    
+    .address {
+        @apply flex gap-6 lg:gap-[58px] flex-wrap mt-[30px] md:mt-0
+    }
+    
+    .address .office-address {
+        @apply lg:w-[32%]
+    }
+
+    .leagal-link {
+        @apply  lg:w-[30%] md:w-[35%] w-full
+    }
+
+    .footer-title {
+        @apply text-sm text-black-solid-400 font-medium
+    }
+
+    .menu-link {
+        @apply md:w-[25%] lg:w-[30%]   w-full;
+
+        li a {
+            @apply text-brand-solid-500 font-bold hover:text-brand-solid-400 hover:underline hover:transition-all
+        }
+    }
+
+    .transparency-link {
+        @apply w-[40%];
+    }
+
+    .bottom-footer {
+        @apply mt-[58px];
+    }
+
+    .menu-link li,
+    .leagal-link li,
+    .transparency-link li {
+        @apply mb-3;
+    }
+
+    .leagal-link li a,
+    .transparency-link li a {
+        @apply hover:underline hover:transition-all font-semibold;
+    }
+}
+
+.scrollto-top {
+    @apply w-14 h-14 rounded-full border-2 border-black-transparent-200 absolute right-[34px] md:right-0 md:left-0 mx-auto md:-top-[30px] bg-white-500
+}
+
+.scrollto-top svg {
+    @apply mx-auto
+}
+
+.link-wrapper {
+    @apply md:w-[70%] lg:w-[51%] w-full flex flex-wrap  gap-y-[30px] md:gap-y-0
+}
+
+.leagal-link {
+    @apply w-[20%]
+}

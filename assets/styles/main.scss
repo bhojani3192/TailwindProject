@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap');
+@import url('./override.scss');
+@import url('./common.scss');
+@import url('./buttons.scss');
+@import url('./form.scss');
+@import url('./table.scss');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: "Noto Sans Georgian", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.project-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8;
+}
+
+section {
+    @apply scroll-m-32;
+}

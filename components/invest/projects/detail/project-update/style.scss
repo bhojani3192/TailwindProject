@@ -1,0 +1,23 @@
+section {
+    @apply bg-black-solid-50 xs:pl-5 lg:pl-8 pr-7;
+
+    .testimony-box {
+        @apply py-8 min-h-[200px] md:min-h-[350px]  md:h-[300px] min-w-[336px] w-full px-8 bg-white rounded-3xl xs:drop-shadow-md xs:mb-10;
+
+        h2 {
+            @apply text-xl font-bold mt-6;
+        }
+
+        p {
+            @apply text-base font-normal mt-4;
+        }
+
+        .date {
+            @apply flex items-center text-brand-solid-500 text-base font-bold;
+        }
+
+        &:last-child {
+            @apply mr-32;
+        }
+    }
+}

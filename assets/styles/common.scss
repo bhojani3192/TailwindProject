@@ -1,0 +1,130 @@
+.common-subtitle {
+    @apply text-black-solid-500 font-light leading-[normal] text-2xl md:text-[32px];
+
+    span {
+        @apply font-bold;
+    }
+}
+
+.common-subtitle span {
+    @apply text-brand-solid-500;
+}
+
+.common-description {
+    @apply text-black-solid-500 leading-[normal] text-sm md:text-[20px];
+}
+
+.common-subtitle-2 {
+    @apply text-black-solid-500 font-[700] leading-[normal] text-[24px];
+}
+
+.small-description {
+    @apply text-sm text-black-solid-400;
+}
+
+.section-description {
+    @apply text-white-transparent-400 font-normal mt-2 md:mt-5 text-sm sm:text-base
+}
+
+.section-description.dark {
+    @apply text-black-solid-500
+}
+
+.section-subtitle {
+    @apply text-xl md:text-2xl
+}
+
+.section-title {
+    @apply text-xl font-bold md:text-2xl text-black-solid-500;
+}
+
+.section-title svg {
+    @apply w-12 h-12 md:w-[72px] md:h-[72px]
+}
+
+.section-title {
+    @apply gap-3 md:gap-5;
+
+    .common-subtitle {
+        @apply mb-2 md:mb-4;
+    }
+}
+
+hr {
+    @apply border-black-transparent-200;
+}
+
+.success {
+    @apply text-success-solid-500
+}
+
+.warning {
+    @apply text-warning-solid-500;
+}
+
+.card {
+    @apply bg-white-500 border border-black-transparent-200 rounded-3xl drop-shadow-md;
+
+    .card-title {
+        @apply text-base font-bold text-black-solid-500;
+    }
+
+    .card-description {
+        @apply text-sm font-normal;
+    }
+}
+
+.description {
+    @apply text-sm sm:text-base text-black-solid-500;
+}
+
+a.link {
+    @apply text-brand-solid-500 font-black underline text-sm sm:text-base;
+}
+
+
+.mobile-menu {
+    @apply lg:hidden;
+
+    .menu-btn.secondary {
+        @apply text-black-solid-500 rounded-full gap-2 text-xs h-[40px] drop-shadow-lg;
+    }
+
+    .menu-btn {
+        svg {
+            @apply inline;
+        }
+    }
+}
+
+@layer {
+    svg.dark {
+        path {
+            @apply fill-black-solid-500;
+        }
+    }
+
+    svg.brand {
+        path {
+            @apply fill-brand-solid-500;
+        }
+    }
+}
+
+header {
+    a {
+        @apply font-bold text-black-solid-500 flex items-center gap-2;
+    }
+
+    a.active {
+        @apply text-brand-solid-500 relative;
+
+        &::before {
+            @apply absolute content-[''] w-full h-[5px] bg-brand-gradient -top-7 rounded-b-lg;
+        }
+
+        svg path {
+            @apply fill-brand-solid-500;
+        }
+    }
+}
